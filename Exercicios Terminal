@@ -1,0 +1,54 @@
+1 - echo “Guilherme”
+2 - echo “Guilherme” > cliente01.txt  
+    less cliente01.txt 
+3 - echo “santa maria” >> cliente01.txt 
+4 - mkdir clientes 
+   ls 
+5 - mv cliente01.txt clientes 
+    cd clientes 
+    ls 
+6 - cp cliente01.txt cliente01.txt.bkp 
+    ls 
+7 - rm cliente01.txt 
+8 - vi cliente.script 
+    nome = “Guilherme” ; echo $nome 
+    echo “Guilherme” > cliente01.txt 
+    echo “Bragas” >> cliente01.txt 
+    mkdir clientes 
+    mv cliente01.txt clientes 
+    cd clientes 
+    cp cliente01.txt cliente01.txt.bkp 
+    rm cliente01.txt
+9 - chmod +x cliente.script 
+10 -
+11 -  wget https://gist.githubusercontent.com/leandersonandre/c8cba982f42262591be628e5397d1c3f/raw/bd13a3e13823708e477f99f9285f845b292714c6/cidades_sc.txt 
+12 - Mostrou todas as cidades com balneario em seu texto.
+      grep Balneario cidades_sc.txt 
+      Balneario Arroio do Silva 
+      Balneario Barra do Sul 
+      Balneario Camboriu 
+      Balneario Gaivota 
+13 - não retornou nenhum resultado 
+14 - etornou o resultado de todas as cidades com "do Sul" no texto.
+      grep "do Sul" cidades_sc.txt 
+      Balneario Barra do Sul 
+      Bocaina do Sul 
+      Campo Belo do Sul 
+      Caxambu do Sul 
+      Cocal do Sul 
+      Formosa do Sul 
+      Guaruja do Sul 
+      Jaragua do Sul 
+      Lindoia do Sul 
+      Rio do Sul 
+      Santa Rosa do Sul 
+      Santiago do Sul 
+      Sao Bento do Sul 
+      Sao Cristovao do Sul 
+      Sao Francisco do Sul 
+      Sao Joao do Sul 
+      Timbe do Sul 
+15 - cat cidades_sc.txt | grep Balneario 
+16 - cat cidades_sc.txt | grep Balneario > balneario.txt
+17 - tar -cf compactado.tar balneario.txt 
+18 - tar -xf compactado.tar 
