@@ -62,12 +62,14 @@ Shell Script
   1- R: echo "Digite seu nome "
 	read nome
 	echo "Seu nome é: $nome "
+  
   2- R: echo "Digite um numero "
         read n1
         echo "Digite outro numero "
         read n2
         n1=$(($n1*$n2))
         echo "Resultado $n1"
+  
   3- R: echo "Digite um numero: "
 	read x
 	if [ $x -gt 0 ]; then
@@ -77,4 +79,48 @@ Shell Script
 	else
         #echo "igual zero"
 	fi
-   4- R:
+   
+   4- R:#!/usr/bash
+ 
+        echo "Infome um numero"
+ 
+        read x
+ 
+        i=0
+ 
+        while [ $i -le 10 ]; do
+ 
+        z=$(($x*$i))
+ 
+        echo "$x * $i = $z"
+ 
+        i=$(($i+1))
+ 
+        done
+	
+5 - R: #!/usr/bash
+ 
+        echo "1: Calendrio
+        echo "2: Listas de arquivos do diretrio"
+ 
+        read x
+
+        if [ $x -eq 1 ]; then
+ 
+        echo|cal
+ 
+        elif [ $x -eq 2 ]; then
+ 
+        mkdir Documentos
+ 
+        cd Documentos
+ 
+        echo "  " > arquivo1.txt
+	echo "  " > arquivo2.txt
+ 
+        ls
+ 
+        else
+        echo "Voce digitou  errado"
+ 
+        fi
