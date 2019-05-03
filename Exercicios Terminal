@@ -59,25 +59,28 @@ ________________________________________________________________________________
 
 Shell Script
 
-  1- R: echo "Digite seu nome "
+  1- R: #!/usr/bash
+  	echo "Digite seu nome "
 	read nome
 	echo "Seu nome é: $nome "
   
-  2- R: echo "Digite um numero "
+  2- R: #!/usr/bash
+  	echo "Digite um numero "
         read n1
         echo "Digite outro numero "
         read n2
         n1=$(($n1*$n2))
         echo "Resultado $n1"
   
-  3- R: echo "Digite um numero: "
+  3- R: #!/usr/bash
+  	echo "Digite um numero: "
 	read x
 	if [ $x -gt 0 ]; then
-        #echo "maior que 0"
+        echo "maior que 0"
 	elif [ $x -lt 0 ]; then
-        #echo "menor que zero"
+        echo "menor que zero"
 	else
-        #echo "igual zero"
+        echo "igual zero"
 	fi
    
    4- R:#!/usr/bash
